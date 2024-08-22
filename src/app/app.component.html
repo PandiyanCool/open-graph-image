@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Open Graph Image Fetcher</h1>
+  <div class="content">
+    <input type="text" placeholder="Enter URL" [(ngModel)]="targetURL" (keyup.enter)="fetchOGImage()"
+      class="url-input" />
+    <button (click)="fetchOGImage()">Fetch Open Graph Image</button>
+    <div *ngIf="loading" class="loader"></div>
+    <div *ngIf="ogImage && !loading" class="image-container">
+      <img [src]="ogImage" alt="Open Graph Image">
+    </div>
+  </div>
+</div>

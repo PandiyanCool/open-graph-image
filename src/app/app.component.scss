@@ -1,0 +1,101 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  display: inline-block;
+  text-align: left;
+}
+
+.url-input {
+  margin-right: 10px; /* Add space between the textbox and the button */
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+.image-container {
+  height: 300px; /* Fixed height to prevent jumping */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
